@@ -61,7 +61,7 @@ body{
     margin:3em 1em;
 }
 
-.symptoms.p{
+.home p{
     line-height: var(--leading);
 }
 
@@ -72,7 +72,7 @@ img{
 }
 
 @media(min-width: 730px){
-    section.symptoms{
+    section.home{
         display:grid;
         grid-template-columns: repeat(2,50%);
         grid-template-areas:
