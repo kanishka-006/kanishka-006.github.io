@@ -3,7 +3,9 @@
 :root{
     --leading: 2em;
 }
-
+ div{
+     display: block;
+ }
 .name header{
     padding: 0;
 }
@@ -13,12 +15,13 @@ body{
 }
 
  .navbar {
-     top:0;
+     top: 0px;
     width: 100%;
-    background-color:thistle;
+    background-color:mediumaquamarine;
     overflow: auto;
     text-align: center;
     display: inline-block;
+    position: absolute;
 }
 
 .navbar a {
@@ -27,20 +30,28 @@ body{
     color: white;
     text-decoration: none;
     font-size: 17px;
+    background-color:green;
+    border:dimgray;
+    
   }
 
   .navbar a:hover {
-    background-color: tomato;
+    background-color: grey;
   }
 
+  .navbar a:active {
+    background-color:purple;
+  }
+
+
  .name {
-     top: 0;
-     position: relative;
+     top: 0px;
     color:white;
     background-image: url("images/bg2.jpg");
     text-align:center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .name h1{
@@ -48,35 +59,23 @@ body{
          font-size: 4em;
 }
 
-.name p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.name img{
-    float:right;
-}
-
-.right-col{
-    text-align:center;
-    margin:3em 1em;
-}
-
-.home p{
+.right-col p{
+    font-family:  Georgia, serif;
     line-height: var(--leading);
 }
 
-img{
-    width: 500px;
-    height: 800px;
-    margin: 4em 2em;
+.right-col{
+    text-align: left;
 }
-
-@media(min-width: 730px){
+img{
+    width: 600px;
+    height:1000px;
+}
+  @media screen and (min-width: 730px){
     section.home{
         display:grid;
         grid-template-columns: repeat(2,50%);
-        grid-template-areas:
-          "hos content";
+        grid-template-areas: "hos content";
     }
     .right-col{
         grid-area: content;
@@ -84,5 +83,16 @@ img{
     img{
         grid-area: hos;
     }
-       
+   }
+
+   .home p{
+       font-family: 'Brush Script MT', cursive;
+       position:relative;
+       font-size: 1.5em;
+       padding: 0;
+       margin:0;
+   }
+   .footer {
+       border: 2px solid black;
+       margin: 2px;
    }
